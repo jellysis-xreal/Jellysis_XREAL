@@ -1,0 +1,34 @@
+# Blender 3.4.0 Beta MTL File: 'None'
+# www.blender.org
+
+newmtl cork_lid_03_u0_v0
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/cork_lid_03_u0_v0_diffuse.jpg
+map_Pr I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/cork_lid_roughness_2.jpg
+map_Bump -bm 1.000000 I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/cork_lid_03_u0_v0_normal.jpg
+
+newmtl marmalade_jar_03_u0_v0
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+Pm 0.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/marmalade_jar_03_u0_v0_diffuse.jpg
+map_Pr I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/marmalade_jar_roughness_3.jpg
+map_Bump -bm 1.000000 I:/Photogrammetry/Projects/frank_cooper_pot_03/realitycapture/exports/finals/Models/marmalade_jar_03_u0_v0_normal.jpg
