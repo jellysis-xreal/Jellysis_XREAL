@@ -11,28 +11,31 @@ public class InfoSender : MonoBehaviour
     [SerializeField] private bool isTriggering;
     void Start()
     {
-        myInfo = GetComponent<GlobalObjects>();
-        if (myInfo == null)
+        //myInfo = GetComponent<GlobalObjects>();
+        rb = GetComponent<Rigidbody>();
+        /*if (myInfo == null)
         {
             myInfo = GetComponentInChildren<GlobalObjects>();   
-        }
-        rb = GetComponent<Rigidbody>();
+        }*/
         col = GetComponentInChildren<Collider>();
         Init();
+    }
+
+    private void Update()
+    {
+        //Debug.Log(transform.position);
     }
 
     void Init()
     {
         rb.useGravity = true;
-        rb.isKinematic = false;
-        col.isTrigger = false;
+        //col.isTrigger = false;
     }
 
     void SetIsGrabbed()
     {
         rb.useGravity = false;
-        rb.isKinematic = false;
-        col.isTrigger = true;
+        //col.isTrigger = true;
     }
 
     void SetDrop()
@@ -44,7 +47,7 @@ public class InfoSender : MonoBehaviour
         else
         {
             rb.useGravity = true;
-            col.isTrigger = false;
+            //col.isTrigger = false;
         }
     }
     // 처음 상태 gravity o, kinematic x, triggerx  
@@ -85,35 +88,53 @@ public class InfoSender : MonoBehaviour
     {
         if (other.gameObject.layer == 11)
         {
-            //Debug.Log("trigger Enter "+other.name);
-            rb.velocity = Vector3.zero;
-            rb.useGravity = false;
-            rb.isKinematic = true;
-            rb.constraints = RigidbodyConstraints.FreezeRotationX;
-            rb.constraints = RigidbodyConstraints.FreezeRotationY;
-            rb.constraints = RigidbodyConstraints.FreezeRotationZ;
-            
+            Transform originalParent = transform.parent;
+            Vector3 originalLocalPosition = transform.localPosition;
+            Quaternion originalLocalRotation = transform.localRotation;
+            Vector3 originalLocalScale = transform.localScale;
+
+// 부모 변경
+            //transform.SetParent(newParent);
+
+// 위치, 회전, 스케일 보정
+            transform.localPosition = originalLocalPosition;
+            transform.localRotation = originalLocalRotation;
+            transform.localScale = originalLocalScale;
+
+            Debug.Log("trigger Enter "+other.name);
+            //rb.isKinematic = true;
+            /*rb.angularVelocity = Vector3.zero;            
+            rb.velocity = Vector3.zero;*/
+            rb.constraints = RigidbodyConstraints.FreezeRotation;
+            Debug.Log(transform.position);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.layer == 11)
         {
-            //Debug.Log(other.name + " trigger Exit");
-            isTriggering = false;
+            Debug.Log(other.name + " trigger Exit");
+            //isTriggering = false;
+            //rb.isKinematic = false;
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.None;
             transform.SetParent(null); // Trigger Exit되면 종속관계 해제
         }
-    }
+    }*/
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.layer == 11 && myInfo.GUID < 100)
+        if (other.gameObject.layer == 11) // && myInfo.GUID < 100)
         {
-            //Debug.Log(other.name + " trigger Stay");
-            isTriggering = true;
-            transform.SetParent(other.transform); // Trigger된 오브젝트의 자식으로 놔둠.
+            Debug.Log(other.name + " trigger Stay");
+            //isTriggering = true;            rb.isKinematic = true;
+            //rb.isKinematic = true;
+            rb.useGravity = false;
+            //transform.SetParent(other.transform); // Trigger된 오브젝트의 자식으로 놔둠.
+            //Debug.Log(transform.localPosition);
+            //Debug.Log(transform.position);
+            //rb.angularVelocity = Vector3.zero;            
+            //rb.velocity = Vector3.zero;
         }
     }
     
