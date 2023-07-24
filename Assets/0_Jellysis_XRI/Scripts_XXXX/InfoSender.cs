@@ -88,7 +88,7 @@ public class InfoSender : MonoBehaviour
     {
         if (other.gameObject.layer == 11)
         {
-            Transform originalParent = transform.parent;
+            /*Transform originalParent = transform.parent;
             Vector3 originalLocalPosition = transform.localPosition;
             Quaternion originalLocalRotation = transform.localRotation;
             Vector3 originalLocalScale = transform.localScale;
@@ -99,7 +99,7 @@ public class InfoSender : MonoBehaviour
 // 위치, 회전, 스케일 보정
             transform.localPosition = originalLocalPosition;
             transform.localRotation = originalLocalRotation;
-            transform.localScale = originalLocalScale;
+            transform.localScale = originalLocalScale;*/
 
             Debug.Log("trigger Enter "+other.name);
             //rb.isKinematic = true;
