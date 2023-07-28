@@ -1,6 +1,6 @@
 # 🍭 JELLYSIS 🍭
 
-![Slide 16_9 - 1.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/646755f1-c9a7-4470-a9d7-ccc3ffcb97bd/Slide_16_9_-_1.png)
+![Slide 16_9 - 1](https://github.com/jellysis-xreal/Jellysis_XREAL/assets/64896960/7a490cb8-6a9b-40bc-90d0-961fc428d6bc)
 
 > **XREAL 4기** 프로젝트
 > 
@@ -9,13 +9,10 @@
 > 
 <br/>
 
-- **C O N T E N T S**
-    
-    [About the Jellysis](https://www.notion.so/About-the-Jellysis-5870bfaf8b98409aa47991bafab9f0ce?pvs=21) 
-    
-    [About the Contents](https://www.notion.so/About-the-Contents-e27f390041e8424e917b0487bba8fe5a?pvs=21) 
-    
-    [About Us](https://www.notion.so/About-Us-3b22675dd9964bcf98b51452e229a12f?pvs=21) 
+## *C O N T E N T S*
+1. [About the Jellysis](#About-the-Jellysis) 
+2. [About the Contents](#About-the-Contents) 
+3. [About Us](#About-Us) 
     
 <br/><br/><br/>
 
@@ -23,10 +20,8 @@
 
 ---
 
-<aside>
-🚩 젤리시스는 **VR 기기 입문자**를 위하여 **현실과의 괴리감이 적은 조작방법**을 제공하며, **곰을 꾸미는 행위**와 함께 플레이 하는 사람과의 **상호작용 및 소통 과정**이 재밌는 게임이다.
+> 🚩 젤리시스는 **VR 기기 입문자**를 위하여 **현실과의 괴리감이 적은 조작방법**을 제공하며, **곰을 꾸미는 행위**와 함께 플레이 하는 사람과의 **상호작용 및 소통 과정**이 재밌는 게임이다.
 
-</aside>
 <br/>
 
 ### 💭 젤리시스의 정체성
@@ -61,6 +56,9 @@
 <br/><br/> 
 
 ### 💭 젤리시스의 차별성
+- 왜 초보 친화적인가?
+- 
+
 
 <br/><br/><br/>
 
@@ -142,8 +140,8 @@
 | 잘린 과일(딸기, 바나나, 키위) | 칼로 썰린 과일로, 과일틀을 통해 가공될 수 있다 | ☐ |
 | 과자(원, 별, 하트 모양) | 젤리곰에게 붙일 수 있다 | ☒ |
 | 파라솔 | 펼쳐서 젤리곰에게 씌워줄 수 있다 | ☒ |
-|  |  |  |
-|  |  |  |
+| ? | ? | ? |
+| ? | ? | ? |
 
 <br/>
 
@@ -160,7 +158,7 @@
 
 ---
 
-![Slide 16_9 - 16.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cb2e89cb-bd48-473f-81d5-2965e8e1e497/Slide_16_9_-_16.png)
+![Slide 16_9 - 16](https://github.com/jellysis-xreal/Jellysis_XREAL/assets/64896960/916ee191-8a5e-4f58-bba7-e7d0b632393c)
 
 <br/>
 
