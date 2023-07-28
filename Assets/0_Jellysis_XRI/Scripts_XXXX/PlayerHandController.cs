@@ -53,7 +53,7 @@ public class PlayerHandController : MonoBehaviour
     public float timer = 0f;
     public float delayTime = 3f;
     [SerializeField] private float scaleSpeed;
-    [SerializeField] private bool isScalingUp = false;
+    //[SerializeField] private bool isScalingUp = false;
     [SerializeField] private GameObject _recentMakedCream;
     #endregion
     void Start()

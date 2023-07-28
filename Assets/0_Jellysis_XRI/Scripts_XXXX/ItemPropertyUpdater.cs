@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lllll : MonoBehaviour
+public class ItemPropertyUpdater : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody rb;
@@ -14,7 +14,6 @@ public class lllll : MonoBehaviour
     void Start()
     {
         _objectScale = transform.localScale;
-        Debug.Log(_objectScale);
     }
 
     // Update is called once per frame
