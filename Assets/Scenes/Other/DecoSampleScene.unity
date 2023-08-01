@@ -1503,6 +1503,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Complete XR Origin Hands Set Up
       objectReference: {fileID: 0}
+    - target: {fileID: 3113582726751902587, guid: 5eccbf4be2c00e94689ee8062e4e7276,
+        type: 3}
+      propertyPath: m_DrawMeshes
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3113582726751902587, guid: 5eccbf4be2c00e94689ee8062e4e7276,
+        type: 3}
+      propertyPath: m_HandMeshMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5773256366622995465, guid: 5eccbf4be2c00e94689ee8062e4e7276,
         type: 3}
       propertyPath: m_RootOrder
@@ -9868,7 +9878,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 67e65f7ae3a1cb948a27d081619e9246,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 67e65f7ae3a1cb948a27d081619e9246,
         type: 3}
@@ -10784,7 +10794,7 @@ Transform:
   - {fileID: 601934899}
   - {fileID: 576782587}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 109.09799, y: -98.630005, z: -270.408}
 --- !u!114 &2072821611
 MonoBehaviour:
