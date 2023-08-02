@@ -8,6 +8,7 @@ public class ItemPropertyUpdater : MonoBehaviour
     // Start is called before the first frame update
     public Rigidbody rb;
     [SerializeField]private Transform preTransform; // 현재 Trigger 중일 경우에만 true
+    [SerializeField] private bool[] isHavingChild;
     //public Transform parentTransform;
     private Vector3 _objectScale;
     [SerializeField] private bool isDropped = false;
@@ -61,6 +62,8 @@ public class ItemPropertyUpdater : MonoBehaviour
     public void ItemSelectEvent()
     {
         isDropped = false;
+        // 탕후루에 꽂혔다가 잡혔을 때 FruitTransform.DetachFruit 호출
+        if (_fruitTransformer) _fruitTransformer.DetachFruit();
     }
     public void ItemUnSelectEvent() // 손에서 놨을 때 event
     {
@@ -77,7 +80,7 @@ public class ItemPropertyUpdater : MonoBehaviour
         }else if (preTransform != null && preTransform.gameObject.layer == 21)
         {
             // 아직 stick과 Trigger 중이면 그 Collider에 붙임.
-            _fruitTransformer.PlaceFruit(transform);
+            _fruitTransformer.AttachFruit(transform);
             rb.useGravity = false;
             rb.isKinematic = true;
             Debug.Log("place Fruit!");

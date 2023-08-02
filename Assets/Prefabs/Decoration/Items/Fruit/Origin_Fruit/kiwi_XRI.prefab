@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038505253432657425}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: cut_kiwi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1038505253432657425
 Transform:
   m_ObjectHideFlags: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038505253432657433}
   m_LocalRotation: {x: 0, y: -0, z: 0.7660445, w: -0.6427876}
-  m_LocalPosition: {x: -0.0173, y: 0.003, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1038505253884427288}
   - component: {fileID: 500027286944802234}
   - component: {fileID: 500027286944802233}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Fruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,8 +60,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038505253884427287}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0154, z: 0}
-  m_LocalScale: {x: 1, y: 0.19999999, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8351279895503518757}
@@ -81,8 +81,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.016171135, y: 0.023908848, z: 0.017477056}
-  m_Center: {x: -0.00024454668, y: 0.0017075359, z: -0.00017799996}
+  m_Size: {x: 0.04244871, y: 0.018054876, z: 0.041953396}
+  m_Center: {x: 0.00013573172, y: 0.0011171835, z: 0.00060498866}
 --- !u!54 &1038505253884427288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,8 +113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1038505253884427288}
   preTransform: {fileID: 0}
-  parentTransform: {fileID: 1038505253884427286}
+  isHavingChild: 
   isDropped: 0
+  _fruitTransformer: {fileID: 0}
 --- !u!114 &500027286944802233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +287,7 @@ GameObject:
   - component: {fileID: 1038505253910094891}
   - component: {fileID: 1038505253910094888}
   - component: {fileID: 1038505253910094889}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038505254401476803}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +421,7 @@ GameObject:
   - component: {fileID: 216704731995823535}
   - component: {fileID: 216704731995823534}
   - component: {fileID: 2522789361777368597}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: kiwi_XRI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -434,7 +435,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195961422045963742}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.7138, y: 0.8069, z: 0.1012}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
@@ -536,8 +537,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 216704731995823533}
   preTransform: {fileID: 0}
-  parentTransform: {fileID: 2005008103227965284}
+  isHavingChild: 
   isDropped: 0
+  _fruitTransformer: {fileID: 0}
 --- !u!114 &216704731995823534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +725,7 @@ GameObject:
   - component: {fileID: 8351279894877466222}
   - component: {fileID: 8351279894877466221}
   - component: {fileID: 8351279894877466220}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: fruit_star (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,8 +740,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351279894877466226}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000029802319, w: -1}
-  m_LocalPosition: {x: 0.0000000033178367, y: -0.025399968, z: 0}
-  m_LocalScale: {x: 0.34987748, y: 1.749387, z: 0.34987742}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038505253884427286}
@@ -752,7 +754,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351279894877466226}
-  m_Mesh: {fileID: 7880144338414959675, guid: 3b561f8f78901bc4ca7d3cef8d00581f, type: 3}
+  m_Mesh: {fileID: 7880144338414959675, guid: ca1a61acf5ee5ba4cae44ee8a63f1ad9, type: 3}
 --- !u!23 &8351279894877466221
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -773,8 +775,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 11d85a16a6814724c8cb06bbb9289efb, type: 2}
-  - {fileID: 2100000, guid: ed89f4ee109f82f449bae4af8edf4f94, type: 2}
+  - {fileID: 2100000, guid: 3177e105ecccdb946b1f3ddb172405bb, type: 2}
+  - {fileID: 2100000, guid: f267d36b5a9e7ef4ba937679f36830f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -823,7 +825,7 @@ GameObject:
   - component: {fileID: 8351279895503518752}
   - component: {fileID: 8351279895503518759}
   - component: {fileID: 8351279895503518758}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: fruit_circle (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -839,7 +841,7 @@ Transform:
   m_GameObject: {fileID: 8351279895503518756}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000029802319, w: -1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34987748, y: 1.749387, z: 0.34987742}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038505253884427286}
@@ -852,7 +854,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351279895503518756}
-  m_Mesh: {fileID: 439785718066874031, guid: 00d93ba95efab594394f2956bf653377, type: 3}
+  m_Mesh: {fileID: 439785718066874031, guid: 573818146207f7e4ba7740256b96864f, type: 3}
 --- !u!23 &8351279895503518759
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -873,8 +875,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dc5ffa823c66cd04cbf3dae796b53dd1, type: 2}
-  - {fileID: 2100000, guid: 8ea48985e0b209b4597931db74073746, type: 2}
+  - {fileID: 2100000, guid: 2c33ffc8fbe760d4482437a0f42083c7, type: 2}
+  - {fileID: 2100000, guid: 502e03d79acdfef4198349e8ef38d91b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -923,7 +925,7 @@ GameObject:
   - component: {fileID: 8351279895538059989}
   - component: {fileID: 8351279895538059988}
   - component: {fileID: 8351279895538059995}
-  m_Layer: 0
+  m_Layer: 18
   m_Name: fruit_heart (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,8 +940,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351279895538059993}
   m_LocalRotation: {x: -0, y: -0, z: -0.000000029802319, w: -1}
-  m_LocalPosition: {x: 0, y: -0.0254, z: 0}
-  m_LocalScale: {x: 0.34987748, y: 1.749387, z: 0.34987742}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1038505253884427286}
@@ -952,7 +954,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8351279895538059993}
-  m_Mesh: {fileID: -6980499594119021195, guid: 6faf5b9c44aab56429a6a1c8ec12340c, type: 3}
+  m_Mesh: {fileID: -6980499594119021195, guid: 307b7bfee542c724683a14bd2a198318, type: 3}
 --- !u!23 &8351279895538059988
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -973,8 +975,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 726da4ab33ebe6d48a61efce1c8be40c, type: 2}
-  - {fileID: 2100000, guid: 0bb67e35f6558114a90850a286306975, type: 2}
+  - {fileID: 2100000, guid: fc002de18afb6c840b5dc8fb21eec467, type: 2}
+  - {fileID: 2100000, guid: d96206e74eaac334b9f807f1982c3c42, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
