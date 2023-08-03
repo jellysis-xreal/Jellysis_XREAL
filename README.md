@@ -158,7 +158,7 @@
 
 ---
 
-![Slide 16_9 - 16](https://github.com/jellysis-xreal/Jellysis_XREAL/assets/64896960/916ee191-8a5e-4f58-bba7-e7d0b632393c)
+![젤리시스 팀원 가로버젼](https://github.com/jellysis-xreal/Jellysis_XREAL/assets/64896960/b8b6706d-deb5-4090-af97-e199597fcade)
 
 <br/>
 
