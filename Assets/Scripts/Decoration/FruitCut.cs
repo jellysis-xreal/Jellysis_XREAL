@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class onion_cut : MonoBehaviour
+public class FruitCut : MonoBehaviour
 {
     public GameObject onion1, onion2;
     public AudioSource cut_sound;
