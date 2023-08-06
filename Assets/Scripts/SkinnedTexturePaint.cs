@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR;
 public class SkinnedTexturePaint : MonoBehaviour
 {
     public int resolution = 1024;
     [Range(0.01f, 1f)]
     public float brushSize = 0.1f;
     public Texture2D brushTexture;
+
+    public Transform brush_ray;
 
     private Texture2D mainTex;
     //private MeshRenderer mr;
@@ -47,16 +50,38 @@ public class SkinnedTexturePaint : MonoBehaviour
             brushTexture.Apply();
         }
     }
+    private InputDevice targetDevice;
+    void Start()
+    {
+        // 특정 컨트롤러하나만 가져오는 방법
+        List<InputDevice> devices = new List<InputDevice>();
+        InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
+        InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
+
+        if (devices.Count > 0)
+            targetDevice = devices[0];
+        Debug.Log(targetDevice);
+    }
 
     private void Update()
     {
         // NOTE : 텍스쳐 페인팅의 대상이 될 모든 컴포넌트에서 레이캐스트 검사를 수행하므로 비효율적이다.
         // 실제로 사용하려면 하나의 컴포넌트에서 레이캐스트 수행하도록 구조를 변경해야 한다.
+        targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
+        if (primaryButtonValue)
+            Debug.Log("Pressing primary button");
+
+
+        targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue);
+        if (triggerValue > 0.1F)
+            Debug.Log("Trigger pressed " + triggerValue);
 
         // 마우스 클릭 지점에 브러시로 그리기
         if (Input.GetMouseButton(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = new Ray(brush_ray.position, brush_ray.forward);
+
             bool raycast = Physics.Raycast(ray, out var hit);
             Collider col = hit.collider;
 
