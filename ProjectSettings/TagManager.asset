@@ -10,6 +10,7 @@ TagManager:
   - Paint
   - Wine
   - Knife
+  - CreamBowl
   layers:
   - Default
   - TransparentFX
