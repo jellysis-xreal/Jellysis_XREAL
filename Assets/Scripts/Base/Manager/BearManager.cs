@@ -24,6 +24,6 @@ public class BearManager : MonoBehaviour
     public void Test()
     {
         // Guest Bear color 변경 테스트
-        // GuestBears[0].GetComponent<GuestBear>().ChangeBaseColor(BaseColorList[(int)BearColorType.Blue]);
+        GuestBears[0].GetComponent<GuestBear>().ChangeBaseColor(BaseColorList[(int)BearColorType.Red]);
     }
 }

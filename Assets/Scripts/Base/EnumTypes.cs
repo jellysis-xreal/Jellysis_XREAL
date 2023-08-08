@@ -49,15 +49,15 @@ namespace EnumTypes
         Green = 1,
         Orange = 2,
         PastelBlue = 3,
-        PastelGreen = 4,
-        PastelOrange = 5,
-        PastelPurple = 6,
-        PastelYellow = 7,
-        Pink = 8,
-        Purple = 9,
-        Red = 10,
-        White = 11,
-        Yellow = 12
+        // PastelGreen = 4,
+        // PastelOrange = 5,
+        // PastelPurple = 6,
+        PastelYellow = 4, 
+        Pink = 5,
+        Purple = 6,
+        Red = 7,
+        White = 8,
+        Yellow = 9
     }
 
 }
