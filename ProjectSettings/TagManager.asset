@@ -11,6 +11,7 @@ TagManager:
   - Wine
   - Knife
   - CreamBowl
+  - PreparedCream
   layers:
   - Default
   - TransparentFX
