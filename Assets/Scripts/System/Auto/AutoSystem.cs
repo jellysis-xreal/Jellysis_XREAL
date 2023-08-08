@@ -1,5 +1,7 @@
 ﻿
-    public class AutoManager
-    {
+public class AutoSystem
+{
         
-    }
+    
+    
+}
