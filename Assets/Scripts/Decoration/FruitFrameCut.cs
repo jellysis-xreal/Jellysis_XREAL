@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class FruitFrameCut : MonoBehaviour
 {
-    public GameObject circle;
-    public GameObject heart, star;
-    public GlobalObjects circle_obejct, heart_object, star_object;
+    public GameObject circle, heart, star;
+    //public GlobalObjects circle_obejct, heart_object, star_object;
     private InfoSender _infoSender;
     void Start()
     {
-        _infoSender = GetComponent<InfoSender>();
+        //_infoSender = GetComponent<InfoSender>();
         circle.SetActive(true);
         star.SetActive(false);
         heart.SetActive(false);
@@ -23,7 +22,7 @@ public class FruitFrameCut : MonoBehaviour
 
         if (collision.gameObject.name == "cut_star")
         {
-            _infoSender.ChangeShape(star_object);
+            //_infoSender.ChangeShape(star_object);
             circle.SetActive(false);
             heart.SetActive(false);
             star.SetActive(true);
@@ -32,7 +31,7 @@ public class FruitFrameCut : MonoBehaviour
 
         if (collision.gameObject.name == "cut_heart")
         {
-            _infoSender.ChangeShape(heart_object);
+            //_infoSender.ChangeShape(heart_object);
             circle.SetActive(false);
             heart.SetActive(true);
             star.SetActive(false);
@@ -41,7 +40,7 @@ public class FruitFrameCut : MonoBehaviour
 
         if (collision.gameObject.name == "cut_circle")
         {
-            _infoSender.ChangeShape(circle_obejct);
+            //_infoSender.ChangeShape(circle_obejct);
             circle.SetActive(true);
             heart.SetActive(false);
             star.SetActive(false);
@@ -62,6 +61,5 @@ public class FruitFrameCut : MonoBehaviour
         {
             //Debug.Log(circle_obejct.GUID + circle_obejct.Name);
         }
-
     }
 }

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 1038505253884427288}
   - component: {fileID: 500027286944802234}
   - component: {fileID: 500027286944802233}
+  - component: {fileID: 2131348772}
   m_Layer: 18
   m_Name: Fruit
   m_TagString: Untagged
@@ -275,6 +276,21 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &2131348772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038505253884427287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2aa13ee9c7584a4a9912575f717ef33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle: {fileID: 8351279895503518756}
+  heart: {fileID: 8351279895538059993}
+  star: {fileID: 8351279894877466226}
 --- !u!1 &1038505253910095063
 GameObject:
   m_ObjectHideFlags: 0
