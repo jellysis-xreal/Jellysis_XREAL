@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8134722618030749149}
   - component: {fileID: 5829640748627195494}
   m_Layer: 0
-  m_Name: strawberry_XRI
+  m_Name: strawberry_T
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,8 +132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 8134722618030749150}
   preTransform: {fileID: 0}
-  parentTransform: {fileID: 7509344382875703063}
+  isHavingChild: 
   isDropped: 0
+  _fruitTransformer: {fileID: 0}
 --- !u!114 &8134722618030749149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,8 +641,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 9046667150502614123}
   preTransform: {fileID: 0}
-  parentTransform: {fileID: 9046667150502614117}
+  isHavingChild: 
   isDropped: 0
+  _fruitTransformer: {fileID: 0}
 --- !u!114 &8436861657754881482
 MonoBehaviour:
   m_ObjectHideFlags: 0
